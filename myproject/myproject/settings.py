@@ -136,6 +136,7 @@ MODELTRANSLATION_LANGUAGES = ('en', 'ru')
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -186,9 +187,3 @@ SIMPLE_JWT = {
     "UPDATE_LAST_LOGIN": False,
 
 }
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
